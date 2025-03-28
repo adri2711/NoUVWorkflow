@@ -40,20 +40,44 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FloorAO:
+        m_Texture: {fileID: 2800000, guid: 295adbce89d52b941b0487f827fe8aeb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _FloorAlbedo:
-        m_Texture: {fileID: 2800000, guid: 402988fe19635894e94ae6e8d536a4f0, type: 3}
+        m_Texture: {fileID: 2800000, guid: c28fc0431fe82e94e9b93c2bdb654a07, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FloorHeight:
+        m_Texture: {fileID: 2800000, guid: 01a3333d1b3affe4db79597b70ebae1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FloorMetallic:
+        m_Texture: {fileID: 2800000, guid: 779380dd2fc3c5743ad12fe58a4f382d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FloorNormal:
-        m_Texture: {fileID: 2800000, guid: 4bbeb40b122cda6439b96509f22ce057, type: 3}
+        m_Texture: {fileID: 2800000, guid: 34628ff173887234999ce1c983f46f5c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainAO:
+        m_Texture: {fileID: 2800000, guid: af58317346b62724ebd7b0aeaef553d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainAlbedo:
-        m_Texture: {fileID: 2800000, guid: b559d8ceb75f62146b87b49eede65156, type: 3}
+        m_Texture: {fileID: 2800000, guid: b1f4e376c6d2f6a4aa20563ed68f45dc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainHeight:
+        m_Texture: {fileID: 2800000, guid: cd91ffa549be8104cb73228b39c0bcd9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainMetallic:
+        m_Texture: {fileID: 2800000, guid: adce0d82116a21a4eaf390e1dfc69414, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainNormal:
-        m_Texture: {fileID: 2800000, guid: f2233ed0bb97c0b46a4e8641e84c609b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 311e5166fd8217a44b246c5f3161dcff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -72,7 +96,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.1
+    - _Scale: 0.05
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &4086900988441999052

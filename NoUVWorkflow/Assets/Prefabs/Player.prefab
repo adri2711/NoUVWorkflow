@@ -728,7 +728,7 @@ MonoBehaviour:
   orientation: {fileID: 7876644653598473924}
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   jumps: 1
   ability1Cooldown: 3
   ability2Cooldown: 5
