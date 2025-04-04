@@ -33,11 +33,14 @@ public class FirstPersonCamera : MonoBehaviour
     Vector3 shakeOffset = new Vector3();
     Vector3 startPos;
 
+    float defaultFov = 100;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         cam = GetComponent<Camera>();
         startPos = transform.localPosition;
+        defaultFov = cam.fieldOfView;
     }
 
     void Update()
@@ -78,12 +81,12 @@ public class FirstPersonCamera : MonoBehaviour
         {
             // Multiply by scale the difference from full scale in the curve
             float distortionAmt = (fovAnimationCurve.Evaluate(fovAnimationTimer) - 1f) * fovAnimationScale + 1f;
-            cam.fieldOfView = 100f * distortionAmt;
+            cam.fieldOfView = defaultFov * distortionAmt;
             fovAnimationTimer += Time.unscaledDeltaTime * fovAnimationSpeed;
         }
         else
         {
-            cam.fieldOfView = 100f;
+            cam.fieldOfView = defaultFov;
         }
 
         ShakeUpdate();

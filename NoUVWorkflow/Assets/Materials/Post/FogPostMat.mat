@@ -51,7 +51,7 @@ Material:
     - _FogFactor: 0.283
     - _GradientDistance: 243
     - _GradientPower: 1.2
-    - _MaxLength: 40
+    - _MaxLength: 79
     - _NoiseFactor: 0.439
     - _NoiseScale: 0.11
     - _Power: 2.5

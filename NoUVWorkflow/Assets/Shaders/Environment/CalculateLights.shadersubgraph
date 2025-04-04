@@ -58,6 +58,20 @@
             },
             "m_InputSlot": {
                 "m_Node": {
+                    "m_Id": "92c89a0715834d43b9137fc40a6f5c0d"
+                },
+                "m_SlotId": -186255333
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "11f644e0d2784720aff18a329d40486a"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
                     "m_Id": "c2953a4005e94af5a79dfd83d1fa14cf"
                 },
                 "m_SlotId": -1756249341
@@ -807,10 +821,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1015.199951171875,
-            "y": 137.60000610351563,
-            "width": 140.0,
-            "height": 33.5999755859375
+            "x": 989.6000366210938,
+            "y": 134.4000244140625,
+            "width": 140.79986572265626,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -886,6 +900,9 @@
             "m_Id": "75d42f86b1b34d43adfe82bcfc5c29b2"
         },
         {
+            "m_Id": "9f8dc23898a045ea88a613abc53b0214"
+        },
+        {
             "m_Id": "c39240f261a14bd1963e658be2068a16"
         },
         {
@@ -908,13 +925,15 @@
         "99525634-60ad-42ae-97ad-351b53d8e5e5",
         "f6811151-56f2-4249-9d21-4d3aa6186598",
         "5132e302-d09f-4b59-b93f-89c3549fb9ba",
-        "fe5989d4-3ca0-4a5d-ba81-53c7a6954136"
+        "fe5989d4-3ca0-4a5d-ba81-53c7a6954136",
+        "93f9b035-4492-4c95-b8b1-5b0e04bdd225"
     ],
     "m_PropertyIds": [
         623657821,
         383811224,
         1666945904,
-        1159111016
+        1159111016,
+        -186255333
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
@@ -987,6 +1006,29 @@
     "m_StageCapability": 3,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "9f8dc23898a045ea88a613abc53b0214",
+    "m_Id": -186255333,
+    "m_DisplayName": "WorldNormal",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_WorldNormal",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
     "m_Labels": []
 }
 
