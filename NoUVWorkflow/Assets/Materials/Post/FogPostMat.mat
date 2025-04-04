@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FogPostMat
+  m_Shader: {fileID: -6465566751694194690, guid: eb375e88d261709499989712e998ff49,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: a8bc699287773964db95f9d78f311a20, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdditiveDistance: 100
+    - _AdditiveFactor: 0.15
+    - _AdditivePower: 4
+    - _Distance: 100
+    - _EdgeWeight: 0.2
+    - _Fade: 0.69
+    - _FogFactor: 0.283
+    - _GradientDistance: 243
+    - _GradientPower: 1.2
+    - _MaxLength: 40
+    - _NoiseFactor: 0.439
+    - _NoiseScale: 0.11
+    - _Power: 2.5
+    - _Progress: 0
+    - _Speed: 2
+    m_Colors:
+    - _EdgeColor: {r: 1, g: 0.3182251, b: 0, a: 0}
+    - _FarColor: {r: 0.5535706, g: 0.7660377, b: 0.7129209, a: 0}
+    - _NearColor: {r: 0.4627451, g: 0.42757612, b: 0.4, a: 0}
+    - _NoiseColor: {r: 1, g: 0, b: 0.005447865, a: 0}
+  m_BuildTextureStacks: []

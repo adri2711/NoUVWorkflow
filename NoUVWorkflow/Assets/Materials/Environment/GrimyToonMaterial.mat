@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GrimyToonMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: c4c312700b5b90240a18473671e9cd53,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
+  - MAIN_LIGHT_CALCULATE_SHADOWS
+  - _MAIN_LIGHT_SHADOWS_CASCADE
+  - _SHADOWS_SOFT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonRamp:
+        m_Texture: {fileID: 2800000, guid: 2fbc30c4c0981e146a111485ddb9c426, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - ADDITIONAL_LIGHT_CALCULATE_SHADOWS: 1
+    - MAIN_LIGHT_CALCULATE_SHADOWS: 1
+    - _AcuteDepthStartDot: 0.384
+    - _AcuteDepthThresholdMult: 1.49
+    - _DepthSensitivity: 0.3
+    - _DepthStrength: 150
+    - _DepthThreshold: 0.25
+    - _DepthTightening: 2.5
+    - _FarDepthStart: 0.2
+    - _FarDepthThresholdMult: 1
+    - _FarNormalStartDepth: 0
+    - _FarNormalThresholdMult: 1
+    - _Glossiness: 0
+    - _MAIN_LIGHT_SHADOWS_CASCADE: 1
+    - _Metallic: 0
+    - _NoiseDistortionIntensity: 0.1
+    - _NoiseIntensity: 0.5
+    - _NoiseIntensityScale: 23
+    - _NoisePower: 1.7
+    - _NoiseScale: 30
+    - _NoiseStep: 0.37
+    - _NormalsSensitivity: 1
+    - _NormalsStrength: 100
+    - _NormalsThreshold: 0.15
+    - _NormalsTightening: 10
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _RimLightColorInfluence: 0.36
+    - _RimLightEdgePower: 2.6
+    - _RimLightShadowPower: 0.8
+    - _RimLightStrength: 1.66
+    - _SHADOWS: 1
+    - _SHADOWS_CASCADE: 1
+    - _SHADOWS_SOFT: 1
+    - _SOFT_SHADOWS: 1
+    - _Smoothness: 0.4
+    - _Thickness: 2
+    - _UVScale: 1
+    - _UseAoMap: 0
+    - _UseColorMap: 0
+    - _UseDepth: 0
+    - _UseDiffuseTexture: 0
+    - _UseEmissiveMap: 0
+    - _UseMetallicMap: 0
+    - _UseNormalMap: 0
+    - _UseNormals: 1
+    - _UseRoughnessMap: 0
+    - _UseTexture: 0
+    m_Colors:
+    - _Color: {r: 0.89433956, g: 0.6438237, b: 0.5990388, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlinesColor: {r: 0, g: 0, b: 0, a: 0}
+    - _RimLightColor: {r: 1, g: 0.08121446, b: 0, a: 0}
+    - _ScreenUV: {r: 0, g: 0, b: 0, a: 0}
+    - _UvOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _UvTiling: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &3956507878184627610
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
