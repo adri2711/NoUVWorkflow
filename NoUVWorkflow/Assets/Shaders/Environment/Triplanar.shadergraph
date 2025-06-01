@@ -801,10 +801,10 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "1a34dd6c145746cc8dac8cadd0f6749f",
     "m_Id": 1,
-    "m_DisplayName": "Out_Vector4",
+    "m_DisplayName": "Color",
     "m_SlotType": 1,
     "m_Hidden": false,
-    "m_ShaderOutputName": "OutVector4",
+    "m_ShaderOutputName": "Color",
     "m_StageCapability": 2,
     "m_Value": {
         "x": 0.0,
@@ -935,6 +935,9 @@
         },
         {
             "m_Id": "3ee4925eda5e481fad1bd2d0815e6435"
+        },
+        {
+            "m_Id": "67c4acafcce144faaa78ed2e632c8d3b"
         }
     ],
     "synonyms": [],
@@ -1298,10 +1301,10 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "3ee4925eda5e481fad1bd2d0815e6435",
     "m_Id": 2,
-    "m_DisplayName": "Out_Vector3",
+    "m_DisplayName": "Normal",
     "m_SlotType": 1,
     "m_Hidden": false,
-    "m_ShaderOutputName": "OutVector3",
+    "m_ShaderOutputName": "Normal",
     "m_StageCapability": 2,
     "m_Value": {
         "x": 0.0,
@@ -1794,6 +1797,21 @@
     "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "67c4acafcce144faaa78ed2e632c8d3b",
+    "m_Id": 3,
+    "m_DisplayName": "Smoothness",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Smoothness",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
