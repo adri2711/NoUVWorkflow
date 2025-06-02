@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Triplanar 2
+  m_Name: Triplanar 3
   m_Shader: {fileID: -6465566751694194690, guid: 0adf4cbc1eb4df14d973192b12b7dd49,
     type: 3}
   m_Parent: {fileID: 0}
@@ -16,6 +16,7 @@ Material:
   - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
   - MAIN_LIGHT_CALCULATE_SHADOWS
   - _MAIN_LIGHT_SHADOWS_CASCADE
+  - _OVERRIDE_VERTEX_COLOR
   - _SHADOWS_SOFT
   - _USE_TEXTURES
   m_InvalidKeywords:
@@ -128,19 +129,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenAlbedoMap:
-        m_Texture: {fileID: 2800000, guid: b1f4e376c6d2f6a4aa20563ed68f45dc, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3025eff55291bf54b8a113353a5c1ae1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenHeightMap:
-        m_Texture: {fileID: 2800000, guid: cd91ffa549be8104cb73228b39c0bcd9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 142c7570feeffc3458159e6ab66c10a6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenMetallicMap:
-        m_Texture: {fileID: 2800000, guid: adce0d82116a21a4eaf390e1dfc69414, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0d030af43a83c1745864f0c1b68e1ef0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenNormalMap:
-        m_Texture: {fileID: 2800000, guid: 311e5166fd8217a44b246c5f3161dcff, type: 3}
+        m_Texture: {fileID: 2800000, guid: fee6d34d81767ee47a1ae3bdd11986e2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainAO:
