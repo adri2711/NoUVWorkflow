@@ -49,7 +49,7 @@ public class TriplanarShaderInspector : ShaderGUI
                 targetMat.DisableKeyword("_USE_FLOOR");
                 targetMat.DisableKeyword("_OVERRIDE_VERTEX_COLOR");
             }
-            GUILayout.Space(5f);
+            GUILayout.Space(10f);
             EditorGUI.BeginChangeCheck();
             useFloor = EditorGUILayout.Toggle("Enable Ground Texture", useFloor);
             if (EditorGUI.EndChangeCheck())
@@ -65,7 +65,7 @@ public class TriplanarShaderInspector : ShaderGUI
                     mainTexturePath = path;
                 }
             }
-            GUILayout.Space(5f);
+            GUILayout.Space(10f);
             GUILayout.Label("Vertex Color");
             if (GUILayout.Button("Override red channel texture"))
             {
@@ -82,7 +82,7 @@ public class TriplanarShaderInspector : ShaderGUI
                 PromptTextures(targetMat, "Blue");
                 targetMat.EnableKeyword("_OVERRIDE_VERTEX_COLOR");
             }
-            GUILayout.Space(5f);
+            GUILayout.Space(10f);
             if (GUILayout.Button("Clear Overrides"))
             {
                 ClearMaterialTextures(targetMat, "Red");
@@ -90,6 +90,8 @@ public class TriplanarShaderInspector : ShaderGUI
                 ClearMaterialTextures(targetMat, "Blue");
                 targetMat.DisableKeyword("_OVERRIDE_VERTEX_COLOR");
             }
+
+            GUILayout.Space(20f);
         }
 
 
@@ -114,23 +116,28 @@ public class TriplanarShaderInspector : ShaderGUI
         for (int i = 0; i < textures.Count; i++)
         {
             string property = "";
-            if (textures[i].name.Contains("albedo"))
+            if (textures[i].name.Contains("_albedo", StringComparison.InvariantCultureIgnoreCase) ||
+                textures[i].name.Contains("-albedo", StringComparison.InvariantCultureIgnoreCase))
             {
                 property = "_" + label + "AlbedoMap";
             }
-            else if (textures[i].name.Contains("normal"))
+            else if (textures[i].name.Contains("_normal", StringComparison.InvariantCultureIgnoreCase) ||
+                textures[i].name.Contains("-normal", StringComparison.InvariantCultureIgnoreCase))
             {
                 property = "_" + label + "NormalMap";
             }
-            else if (textures[i].name.Contains("height"))
+            else if (textures[i].name.Contains("_height", StringComparison.InvariantCultureIgnoreCase) ||
+                textures[i].name.Contains("-height", StringComparison.InvariantCultureIgnoreCase))
             {
                 property = "_" + label + "HeightMap";
             }
-            else if (textures[i].name.Contains("metallic"))
+            else if (textures[i].name.Contains("_metallic", StringComparison.InvariantCultureIgnoreCase) ||
+                textures[i].name.Contains("-metallic", StringComparison.InvariantCultureIgnoreCase))
             {
                 property = "_" + label + "MetallicMap";
             }
-            else if (textures[i].name.Contains("AO"))
+            else if (textures[i].name.Contains("_AO", StringComparison.InvariantCultureIgnoreCase) ||
+                textures[i].name.Contains("-AO", StringComparison.InvariantCultureIgnoreCase))
             {
                 property = "_" + label + "AOMap";
             }
