@@ -15,6 +15,7 @@ public class TriplanarShaderInspector : ShaderGUI
         Material targetMat = materialEditor.target as Material;
 
         GUILayout.Label("Textures", EditorStyles.boldLabel);
+        GUILayout.Space(5f);
 
         bool useTextures = Array.IndexOf(targetMat.shaderKeywords, "_USE_TEXTURES") != -1;
 
@@ -90,10 +91,134 @@ public class TriplanarShaderInspector : ShaderGUI
                 ClearMaterialTextures(targetMat, "Blue");
                 targetMat.DisableKeyword("_OVERRIDE_VERTEX_COLOR");
             }
-
-            GUILayout.Space(20f);
+        }
+        else
+        {
+            targetMat.SetColor("_MainColor", EditorGUILayout.ColorField("Main Terrain Color", targetMat.GetColor("_MainColor")));
         }
 
+        GUILayout.Space(10f);
+        EditorGUILayout.LabelField("Main Smoothness");
+        targetMat.SetFloat("_MainSmoothness", EditorGUILayout.Slider(targetMat.GetFloat("_MainSmoothness"), 0f, 1f));
+        EditorGUILayout.LabelField("Floor Smoothness");
+        targetMat.SetFloat("_FloorSmoothness", EditorGUILayout.Slider(targetMat.GetFloat("_FloorSmoothness"), 0f, 1f));
+        if (useTextures)
+        {
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Texture Scale");
+            targetMat.SetFloat("_Scale", EditorGUILayout.Slider(targetMat.GetFloat("_Scale"), 0.001f, 1f));
+        }
+
+        GUILayout.Space(50f);
+        EditorGUI.BeginChangeCheck();
+        bool useNoise = targetMat.GetInt("_UseNoise") > 0;
+        useNoise = EditorGUILayout.Toggle("Use Noise", useNoise);
+        if (EditorGUI.EndChangeCheck())
+        {
+            targetMat.SetInt("_UseNoise", useNoise ? 1 : 0);
+        }
+        if (useNoise)
+        {
+            GUILayout.Space(10f);
+            GUILayout.Label("Noise", EditorStyles.boldLabel);
+            GUILayout.Space(5f);
+
+            EditorGUILayout.LabelField("Noise Intensity");
+            targetMat.SetFloat("_NoiseIntensity", EditorGUILayout.Slider(targetMat.GetFloat("_NoiseIntensity"), 0f, 1f));
+            EditorGUILayout.LabelField("Floor Noise Power");
+            targetMat.SetFloat("_NoisePower", EditorGUILayout.Slider(targetMat.GetFloat("_NoisePower"), 0f, 10f));
+            EditorGUILayout.LabelField("Noise Step");
+            targetMat.SetFloat("_NoiseStep", EditorGUILayout.Slider(targetMat.GetFloat("_NoiseStep"), 0f, 1f));
+            EditorGUILayout.LabelField("Noise Scale");
+            targetMat.SetFloat("_NoiseScale", EditorGUILayout.Slider(targetMat.GetFloat("_NoiseScale"), 0.01f, 200f));
+            EditorGUILayout.LabelField("Noise Distortion Intensity");
+            targetMat.SetFloat("_NoiseDistortionIntensity", EditorGUILayout.Slider(targetMat.GetFloat("_NoiseDistortionIntensity"), 0f, 1f));
+            EditorGUILayout.LabelField("Noise Intensity Scale");
+            targetMat.SetFloat("_NoiseIntensityScale", EditorGUILayout.Slider(targetMat.GetFloat("_NoiseIntensityScale"), 0.1f, 30f));
+        }
+
+        GUILayout.Space(50f);
+        EditorGUI.BeginChangeCheck();
+        bool useEdgeDetection = targetMat.GetInt("_UseEdgeDetection") > 0;
+        useEdgeDetection = EditorGUILayout.Toggle("Use Edge Detection", useEdgeDetection);
+        if (EditorGUI.EndChangeCheck())
+        {
+            targetMat.SetInt("_UseEdgeDetection", useEdgeDetection ? 1 : 0);
+        }
+        if (useEdgeDetection)
+        {
+            GUILayout.Space(10f);
+            GUILayout.Label("Edge Detection", EditorStyles.boldLabel);
+            GUILayout.Space(5f);
+
+            targetMat.SetColor("_OutlinesColor", EditorGUILayout.ColorField("Outline Color", targetMat.GetColor("_OutlinesColor")));
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Thickness");
+            targetMat.SetFloat("_Thickness", EditorGUILayout.Slider(targetMat.GetFloat("_Thickness"), 0f, 10f));
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Normal Sensitivity");
+            targetMat.SetFloat("_NormalsSensitivity", EditorGUILayout.Slider(targetMat.GetFloat("_NormalsSensitivity"), 0f, 1f));
+            EditorGUILayout.LabelField("Depth Sensitivity");
+            targetMat.SetFloat("_DepthSensitivity", EditorGUILayout.Slider(targetMat.GetFloat("_DepthSensitivity"), 0f, 1f));
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Normal Threshold");
+            targetMat.SetFloat("_NormalsThreshold", EditorGUILayout.Slider(targetMat.GetFloat("_NormalsThreshold"), 0f, 1f));
+            EditorGUILayout.LabelField("Normal Tightening");
+            targetMat.SetFloat("_NormalsTightening", EditorGUILayout.Slider(targetMat.GetFloat("_NormalsTightening"), 0f, 50f));
+            EditorGUILayout.LabelField("Normal Strength");
+            targetMat.SetFloat("_NormalsStrength", EditorGUILayout.Slider(targetMat.GetFloat("_NormalsStrength"), 0f, 300f));
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Depth Threshold");
+            targetMat.SetFloat("_DepthThreshold", EditorGUILayout.Slider(targetMat.GetFloat("_DepthThreshold"), 0f, 1f));
+            EditorGUILayout.LabelField("Depth Tightening");
+            targetMat.SetFloat("_DepthTightening", EditorGUILayout.Slider(targetMat.GetFloat("_DepthTightening"), 0f, 10f));
+            EditorGUILayout.LabelField("Depth Strength");
+            targetMat.SetFloat("_DepthStrength", EditorGUILayout.Slider(targetMat.GetFloat("_DepthStrength"), 0f, 300f));
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Acute Depth Start Dot");
+            targetMat.SetFloat("_AcuteDepthStartDot", EditorGUILayout.Slider(targetMat.GetFloat("_AcuteDepthStartDot"), 0f, 1f));
+            EditorGUILayout.LabelField("Acute Depth Threshold Multiplier");
+            targetMat.SetFloat("_AcuteDepthThresholdMult", EditorGUILayout.Slider(targetMat.GetFloat("_AcuteDepthThresholdMult"), 0f, 10f));
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Far Depth Start");
+            targetMat.SetFloat("_FarDepthStart", EditorGUILayout.Slider(targetMat.GetFloat("_FarDepthStart"), 0f, 1f));
+            EditorGUILayout.LabelField("Far Depth Threshold Multiplier");
+            targetMat.SetFloat("_FarDepthThresholdMult", EditorGUILayout.Slider(targetMat.GetFloat("_FarDepthThresholdMult"), 0f, 10f));
+            EditorGUILayout.LabelField("Far Normal Start Depth");
+            targetMat.SetFloat("_FarNormalStartDepth", EditorGUILayout.Slider(targetMat.GetFloat("_FarNormalStartDepth"), 0f, 1f));
+            EditorGUILayout.LabelField("Far Normal Threshold Multiplier");
+            targetMat.SetFloat("_FarNormalThresholdMult", EditorGUILayout.Slider(targetMat.GetFloat("_FarNormalThresholdMult"), 0f, 10f));
+        }
+
+        GUILayout.Space(50f);
+        EditorGUI.BeginChangeCheck();
+        bool useRimLight = targetMat.GetInt("_UseRimLight") > 0;
+        useRimLight = EditorGUILayout.Toggle("Use Rim Light", useRimLight);
+        if (EditorGUI.EndChangeCheck())
+        {
+            targetMat.SetInt("_UseRimLight", useRimLight ? 1 : 0);
+        }
+        if (useRimLight)
+        {
+            GUILayout.Space(10f);
+            GUILayout.Label("Rim Light", EditorStyles.boldLabel);
+            GUILayout.Space(5f);
+
+            targetMat.SetColor("_RimLightColor", EditorGUILayout.ColorField("Rim Light Color", targetMat.GetColor("_RimLightColor")));
+            GUILayout.Space(10f);
+            EditorGUILayout.LabelField("Rim Light Strength");
+            targetMat.SetFloat("_RimLightStrength", EditorGUILayout.Slider(targetMat.GetFloat("_RimLightStrength"), 0f, 10f));
+            EditorGUILayout.LabelField("Edge Power");
+            targetMat.SetFloat("_RimLightEdgePower", EditorGUILayout.Slider(targetMat.GetFloat("_RimLightEdgePower"), 0.01f, 10f));
+            EditorGUILayout.LabelField("Shadow Power");
+            targetMat.SetFloat("_RimLightShadowPower", EditorGUILayout.Slider(targetMat.GetFloat("_RimLightShadowPower"), 0.01f, 10f));
+            EditorGUILayout.LabelField("Rim Light Color To Light Color Ratio");
+            targetMat.SetFloat("_RimLightColorInfluence", EditorGUILayout.Slider(targetMat.GetFloat("_RimLightColorInfluence"), 0f, 1f));
+
+        }
+
+        GUILayout.Space(80f);
+        GUILayout.Label("Raw Material Fields", EditorStyles.boldLabel);
 
         base.OnGUI(materialEditor, properties);
     }
@@ -148,8 +273,11 @@ public class TriplanarShaderInspector : ShaderGUI
                 continue;
             }
         }
-
-        AssetDatabase.CreateAsset(texArray, "Assets/Textures/TextureArray/" + label + ".asset");
+        if (!AssetDatabase.IsValidFolder("Assets/Textures/TextureArray/" + targetMat.name))
+        {
+            AssetDatabase.CreateFolder("Assets/Textures/TextureArray", targetMat.name);
+        }
+        AssetDatabase.CreateAsset(texArray, "Assets/Textures/TextureArray/" + targetMat.name + "/" + label + ".asset");
 
         targetMat.SetTexture("_" + label + "Textures", texArray);
 

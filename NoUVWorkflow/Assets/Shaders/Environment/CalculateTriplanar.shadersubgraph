@@ -571,6 +571,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "186294b3de9f4d4faf554aa38cd8cc99",
+    "m_Id": -1739058256,
+    "m_DisplayName": "AO2",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_AO2",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SmoothstepNode",
     "m_ObjectId": "1e0e5fedd91b4be596747dacb3cb12db",
     "m_Group": {
@@ -659,6 +674,21 @@
         "e32": 0.0,
         "e33": 1.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "1ead3b6699854b17b376c7bcb252bef5",
+    "m_Id": 1095429295,
+    "m_DisplayName": "AO1",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_AO1",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -1708,6 +1738,21 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "82b6045f2125409f8bd952d53a662126",
+    "m_Id": 4,
+    "m_DisplayName": "AO",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "AO",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "87a123fe51544822942b4b7dabfd216e",
@@ -1902,6 +1947,12 @@
             "m_Id": "235a5f40f2a2451a859b4ca2509b6f1c"
         },
         {
+            "m_Id": "1ead3b6699854b17b376c7bcb252bef5"
+        },
+        {
+            "m_Id": "186294b3de9f4d4faf554aa38cd8cc99"
+        },
+        {
             "m_Id": "bed150e57a324c88837735c788789dec"
         },
         {
@@ -1909,6 +1960,9 @@
         },
         {
             "m_Id": "0e6f2d4dfcbc46bf90c9c80e9b21bf28"
+        },
+        {
+            "m_Id": "82b6045f2125409f8bd952d53a662126"
         }
     ],
     "synonyms": [],
@@ -1928,7 +1982,9 @@
         "817934b1-115c-4e6e-81f2-2b79dbdce122",
         "038d4602-a462-4582-9089-4378d3b81c76",
         "59a3fef4-7010-4ada-8a2d-41883313835d",
-        "6284c3d3-2ba0-4fd1-8aac-ba7e19bb2ab6"
+        "6284c3d3-2ba0-4fd1-8aac-ba7e19bb2ab6",
+        "49436709-3001-4091-8c4d-75822bf6edca",
+        "13d1e69a-f171-4f05-8385-bdfed881313a"
     ],
     "m_PropertyIds": [
         1494439256,
@@ -1938,7 +1994,9 @@
         -1797452873,
         1213256483,
         -960778147,
-        -440008736
+        -440008736,
+        1095429295,
+        -1739058256
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []

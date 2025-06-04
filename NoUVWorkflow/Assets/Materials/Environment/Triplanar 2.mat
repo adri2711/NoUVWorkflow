@@ -66,7 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueTextures:
-        m_Texture: {fileID: 18700000, guid: 962d495639768f34da2b92aa58f09a48, type: 2}
+        m_Texture: {fileID: 18700000, guid: 7c579d2452ce8e445b19ace94d2160dc, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CalculateTriplanar_d71157e872a2442eaef52f6a9ca90db9_T1_3256494535_Texture2D:
@@ -146,7 +146,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FloorTextures:
-        m_Texture: {fileID: 18700000, guid: 23757880a5ae2b54199092390c8cc6da, type: 2}
+        m_Texture: {fileID: 18700000, guid: f9d3ab529124a61438f2cb220f6749d9, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenAOMap:
@@ -174,7 +174,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenTextures:
-        m_Texture: {fileID: 18700000, guid: 432aa7e65640aac44b8eca51d27122b8, type: 2}
+        m_Texture: {fileID: 18700000, guid: fa8b1406d0e591040a4cfbd0a4455c30, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightTextures:
@@ -226,7 +226,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTextures:
-        m_Texture: {fileID: 18700000, guid: 7c0ef4397180de74593b793e248ad871, type: 2}
+        m_Texture: {fileID: 18700000, guid: 4503997646514b640bc4903b0710be4a, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicTextures:
@@ -262,7 +262,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedTextures:
-        m_Texture: {fileID: 18700000, guid: 08575b6a232325f4f8df4ed1cb5effb5, type: 2}
+        m_Texture: {fileID: 18700000, guid: f08e5ce38627cae48bf4f88018e20d76, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DArrayAsset_af2fb6714041489eb3b7034f3899d2a8_Out_0_Texture2DArray:
@@ -640,14 +640,14 @@ Material:
     - _FarDepthThresholdMult: 1
     - _FarNormalStartDepth: 0
     - _FarNormalThresholdMult: 1
-    - _FloorSmoothness: 0.3
+    - _FloorSmoothness: 0.15
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
-    - _MainSmoothness: 0.1
-    - _NoiseDistortionIntensity: 1
+    - _MainSmoothness: 0.04
+    - _NoiseDistortionIntensity: 0.87
     - _NoiseIntensity: 0.345
-    - _NoiseIntensityScale: 80
+    - _NoiseIntensityScale: 23
     - _NoisePower: 1.7
-    - _NoiseScale: 30
+    - _NoiseScale: 70
     - _NoiseStep: 0.3
     - _NormalsSensitivity: 1
     - _NormalsStrength: 100
@@ -659,23 +659,26 @@ Material:
     - _RimLightColorInfluence: 0.5
     - _RimLightEdgePower: 1
     - _RimLightShadowPower: 0.65
-    - _RimLightStrength: 0
+    - _RimLightStrength: 1.5
     - _SHADOWS_SOFT: 1
-    - _Scale: 0.025
+    - _Scale: 0.03
     - _Smoothness: 0.1
-    - _Thickness: 3
+    - _Thickness: 3.49
     - _USETEXTURES: 0
     - _USE_FLOOR: 0
     - _USE_TEXTURES: 0
     - _UVScale: 1000
     - _UseDiffuseTexture: 1
+    - _UseEdgeDetection: 1
     - _UseHeight: 0
+    - _UseNoise: 1
     - _UseNormal: 1
+    - _UseRimLight: 0
     - _UseTextures: 1
     m_Colors:
     - _Color: {r: 1, g: 0.88235295, b: 0, a: 0}
     - _FloorColor: {r: 1, g: 1, b: 1, a: 0}
-    - _MainColor: {r: 0.89433956, g: 0.7624273, b: 0.6530366, a: 0}
+    - _MainColor: {r: 0.690566, g: 0.6495977, b: 0.56157345, a: 0}
     - _OutlinesColor: {r: 0, g: 0, b: 0, a: 0}
     - _RimLightColor: {r: 0.6301887, g: 0.070541576, b: 0, a: 0}
   m_BuildTextureStacks: []
