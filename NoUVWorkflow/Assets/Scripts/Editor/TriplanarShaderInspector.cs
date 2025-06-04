@@ -113,41 +113,60 @@ public class TriplanarShaderInspector : ShaderGUI
         var textures = GetAllTextures(path);
         if (textures == null || textures.Count == 0) return false;
 
+        Texture2DArray texArray = new Texture2DArray(textures.First().width, textures.First().height, 4, (textures.First() as Texture2D).format, false);
+
         for (int i = 0; i < textures.Count; i++)
         {
-            string property = "";
             if (textures[i].name.Contains("_albedo", StringComparison.InvariantCultureIgnoreCase) ||
                 textures[i].name.Contains("-albedo", StringComparison.InvariantCultureIgnoreCase))
             {
-                property = "_" + label + "AlbedoMap";
+                Graphics.CopyTexture(textures[i], 0, 0, texArray, 0, 0);
             }
             else if (textures[i].name.Contains("_normal", StringComparison.InvariantCultureIgnoreCase) ||
                 textures[i].name.Contains("-normal", StringComparison.InvariantCultureIgnoreCase))
             {
-                property = "_" + label + "NormalMap";
+
+                Texture2D normalTexture = new Texture2D(texArray.width, texArray.height, texArray.format, false);
+                normalTexture.filterMode = FilterMode.Trilinear;
+                normalTexture.wrapMode = TextureWrapMode.Clamp;
+                Color[] pixels = (textures[i] as Texture2D).GetPixels(0, 0, texArray.width, texArray.height);
+                float r, g, b, a;
+                for (int j = pixels.Length - 1; j >= 0; j--)
+                {
+                    Color c = pixels[j];
+                    r = g = b = c.g;
+                    a = c.r;
+                    pixels[j] = new Color(r, g, b, a);
+                }
+                normalTexture.SetPixels(pixels);
+                normalTexture.Apply(true);
+
+                Graphics.CopyTexture(normalTexture, 0, 0, texArray, 1, 0);
             }
             else if (textures[i].name.Contains("_height", StringComparison.InvariantCultureIgnoreCase) ||
                 textures[i].name.Contains("-height", StringComparison.InvariantCultureIgnoreCase))
             {
-                property = "_" + label + "HeightMap";
+                Graphics.CopyTexture(textures[i], 0, 0, texArray, 2, 0);
             }
             else if (textures[i].name.Contains("_metallic", StringComparison.InvariantCultureIgnoreCase) ||
                 textures[i].name.Contains("-metallic", StringComparison.InvariantCultureIgnoreCase))
             {
-                property = "_" + label + "MetallicMap";
+                //Graphics.CopyTexture(textures[i], 0, 0, texArray, 3, 0);
             }
             else if (textures[i].name.Contains("_AO", StringComparison.InvariantCultureIgnoreCase) ||
                 textures[i].name.Contains("-AO", StringComparison.InvariantCultureIgnoreCase))
             {
-                property = "_" + label + "AOMap";
+                Graphics.CopyTexture(textures[i], 0, 0, texArray, 3, 0);
             }
             else
             {
                 continue;
             }
-
-            targetMat.SetTexture(property, textures[i]);
         }
+
+        AssetDatabase.CreateAsset(texArray, "Assets/Textures/TextureArray/" + label + ".asset");
+
+        targetMat.SetTexture("_" + label + "Textures", texArray);
 
         return true;
     }
