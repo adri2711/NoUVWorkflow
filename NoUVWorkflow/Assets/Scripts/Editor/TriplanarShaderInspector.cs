@@ -125,23 +125,8 @@ public class TriplanarShaderInspector : ShaderGUI
             else if (textures[i].name.Contains("_normal", StringComparison.InvariantCultureIgnoreCase) ||
                 textures[i].name.Contains("-normal", StringComparison.InvariantCultureIgnoreCase))
             {
-
-                Texture2D normalTexture = new Texture2D(texArray.width, texArray.height, texArray.format, false);
-                normalTexture.filterMode = FilterMode.Trilinear;
-                normalTexture.wrapMode = TextureWrapMode.Clamp;
-                Color[] pixels = (textures[i] as Texture2D).GetPixels(0, 0, texArray.width, texArray.height);
-                float r, g, b, a;
-                for (int j = pixels.Length - 1; j >= 0; j--)
-                {
-                    Color c = pixels[j];
-                    r = g = b = c.g;
-                    a = c.r;
-                    pixels[j] = new Color(r, g, b, a);
-                }
-                normalTexture.SetPixels(pixels);
-                normalTexture.Apply(true);
-
-                Graphics.CopyTexture(normalTexture, 0, 0, texArray, 1, 0);
+                //Graphics.CopyTexture(normalTexture, 0, 0, texArray, 1, 0);
+                targetMat.SetTexture("_" + label + "NormalTexture", textures[i]);
             }
             else if (textures[i].name.Contains("_height", StringComparison.InvariantCultureIgnoreCase) ||
                 textures[i].name.Contains("-height", StringComparison.InvariantCultureIgnoreCase))
