@@ -62,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueNormalTexture:
-        m_Texture: {fileID: 2800000, guid: 4bbeb40b122cda6439b96509f22ce057, type: 3}
+        m_Texture: {fileID: 2800000, guid: fee6d34d81767ee47a1ae3bdd11986e2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueTextures:
@@ -142,11 +142,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FloorNormalTexture:
-        m_Texture: {fileID: 2800000, guid: 34628ff173887234999ce1c983f46f5c, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FloorTextures:
-        m_Texture: {fileID: 18700000, guid: 623bfed75d85fcd428c91603fc5b7a6e, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenAOMap:
