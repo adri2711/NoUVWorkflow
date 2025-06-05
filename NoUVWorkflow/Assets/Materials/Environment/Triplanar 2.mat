@@ -62,11 +62,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueNormalTexture:
-        m_Texture: {fileID: 2800000, guid: 311e5166fd8217a44b246c5f3161dcff, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueTextures:
-        m_Texture: {fileID: 18700000, guid: 7c579d2452ce8e445b19ace94d2160dc, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CalculateTriplanar_d71157e872a2442eaef52f6a9ca90db9_T1_3256494535_Texture2D:
@@ -170,11 +170,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenNormalTexture:
-        m_Texture: {fileID: 2800000, guid: 311e5166fd8217a44b246c5f3161dcff, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenTextures:
-        m_Texture: {fileID: 18700000, guid: fa8b1406d0e591040a4cfbd0a4455c30, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightTextures:
@@ -258,11 +258,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedNormalTexture:
-        m_Texture: {fileID: 2800000, guid: 311e5166fd8217a44b246c5f3161dcff, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedTextures:
-        m_Texture: {fileID: 18700000, guid: f08e5ce38627cae48bf4f88018e20d76, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DArrayAsset_af2fb6714041489eb3b7034f3899d2a8_Out_0_Texture2DArray:
@@ -640,9 +640,9 @@ Material:
     - _FarDepthThresholdMult: 1
     - _FarNormalStartDepth: 0
     - _FarNormalThresholdMult: 1
-    - _FloorSmoothness: 0.15
+    - _FloorSmoothness: 0.513
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
-    - _MainSmoothness: 0.04
+    - _MainSmoothness: 0.035
     - _NoiseDistortionIntensity: 0.87
     - _NoiseIntensity: 0.345
     - _NoiseIntensityScale: 23
@@ -658,8 +658,8 @@ Material:
     - _QueueOffset: 0
     - _RimLightColorInfluence: 0.5
     - _RimLightEdgePower: 1
-    - _RimLightShadowPower: 0.65
-    - _RimLightStrength: 1.5
+    - _RimLightShadowPower: 0.62
+    - _RimLightStrength: 1.01
     - _SHADOWS_SOFT: 1
     - _Scale: 0.03
     - _Smoothness: 0.1
@@ -679,8 +679,8 @@ Material:
     - _Color: {r: 1, g: 0.88235295, b: 0, a: 0}
     - _FloorColor: {r: 1, g: 1, b: 1, a: 0}
     - _MainColor: {r: 0.690566, g: 0.6495977, b: 0.56157345, a: 0}
-    - _OutlinesColor: {r: 0, g: 0, b: 0, a: 0}
-    - _RimLightColor: {r: 0.6301887, g: 0.070541576, b: 0, a: 0}
+    - _OutlinesColor: {r: 0.08916671, g: 0.085906364, b: 0.094259076, a: 0}
+    - _RimLightColor: {r: 0.1764706, g: 0.19102344, b: 0.23137255, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4086900988441999052
 MonoBehaviour:

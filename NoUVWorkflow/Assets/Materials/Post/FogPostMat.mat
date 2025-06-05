@@ -42,24 +42,24 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AdditiveDistance: 100
+    - _AdditiveDistance: 85
     - _AdditiveFactor: 0.15
-    - _AdditivePower: 4
-    - _Distance: 100
+    - _AdditivePower: 3.34
+    - _Distance: 36
     - _EdgeWeight: 0.2
     - _Fade: 0.69
     - _FogFactor: 0.283
-    - _GradientDistance: 243
+    - _GradientDistance: 126
     - _GradientPower: 1.2
-    - _MaxLength: 79
-    - _NoiseFactor: 0.439
-    - _NoiseScale: 0.11
-    - _Power: 2.5
+    - _MaxLength: 110
+    - _NoiseFactor: 0.365
+    - _NoiseScale: 0.075
+    - _Power: 1.73
     - _Progress: 0
     - _Speed: 2
     m_Colors:
     - _EdgeColor: {r: 1, g: 0.3182251, b: 0, a: 0}
-    - _FarColor: {r: 0.5535706, g: 0.7660377, b: 0.7129209, a: 0}
-    - _NearColor: {r: 0.4627451, g: 0.42757612, b: 0.4, a: 0}
+    - _FarColor: {r: 0.31136346, g: 0.3667587, b: 0.4264151, a: 0}
+    - _NearColor: {r: 0.2883232, g: 0.30869138, b: 0.335849, a: 0}
     - _NoiseColor: {r: 1, g: 0, b: 0.005447865, a: 0}
   m_BuildTextureStacks: []

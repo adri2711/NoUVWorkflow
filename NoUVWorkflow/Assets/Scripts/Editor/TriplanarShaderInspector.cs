@@ -225,7 +225,7 @@ public class TriplanarShaderInspector : ShaderGUI
 
     private string PromptTextures(Material targetMat, string label)
     {
-        string path = EditorUtility.OpenFolderPanel("Load png Textures", "", "");
+        string path = EditorUtility.OpenFolderPanel("Select Texture Folder", "", "");
         if (path.Length == 0) return null;
         path = path.Substring(path.IndexOf("Assets"));
 
@@ -287,21 +287,15 @@ public class TriplanarShaderInspector : ShaderGUI
     private void ClearMaterialTextures(Material targetMat, string label)
     {
         string property;
-        property = "_" + label + "AlbedoMap";
+        property = "_" + label + "Textures";
         targetMat.SetTexture(property, null);
-        property = "_" + label + "NormalMap";
-        targetMat.SetTexture(property, null);
-        property = "_" + label + "HeightMap";
-        targetMat.SetTexture(property, null);
-        property = "_" + label + "MetallicMap";
-        targetMat.SetTexture(property, null);
-        property = "_" + label + "AOMap";
+        property = "_" + label + "NormalTexture";
         targetMat.SetTexture(property, null);
     }
 
     private bool MaterialTexturesMissing(Material targetMat, string label)
     {
-        return targetMat.GetTexture("_" + label + "AlbedoMap") == null && targetMat.GetTexture("_" + label + "NormalMap") == null;
+        return targetMat.GetTexture("_" + label + "Textures") == null;
     }
 
     private void FloorCheckbox(Material targetMat, bool checkbox)

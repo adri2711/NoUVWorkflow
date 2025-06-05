@@ -15,8 +15,9 @@ Material:
   m_ValidKeywords:
   - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
   - MAIN_LIGHT_CALCULATE_SHADOWS
-  - _BLEND_TYPE_LINEAR
+  - _BLEND_TYPE_HEIGHT
   - _MAIN_LIGHT_SHADOWS_CASCADE
+  - _OVERRIDE_VERTEX_COLOR
   - _SHADOWS_SOFT
   - _USE_TEXTURES
   m_InvalidKeywords:
@@ -32,6 +33,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AOTextures:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlbedoTextures:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BlueAOMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -53,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueNormalTexture:
-        m_Texture: {fileID: 2800000, guid: f2233ed0bb97c0b46a4e8641e84c609b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4bbeb40b122cda6439b96509f22ce057, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueTextures:
@@ -133,11 +142,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FloorNormalTexture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 34628ff173887234999ce1c983f46f5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FloorTextures:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 18700000, guid: 623bfed75d85fcd428c91603fc5b7a6e, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenAOMap:
@@ -161,11 +170,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenNormalTexture:
-        m_Texture: {fileID: 2800000, guid: f2233ed0bb97c0b46a4e8641e84c609b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 34628ff173887234999ce1c983f46f5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenTextures:
         m_Texture: {fileID: 18700000, guid: 25ee8a7b122ccb04593baecf93e2b47c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightTextures:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainAO:
@@ -209,11 +222,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainNormalTexture:
-        m_Texture: {fileID: 2800000, guid: f2233ed0bb97c0b46a4e8641e84c609b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 311e5166fd8217a44b246c5f3161dcff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTextures:
         m_Texture: {fileID: 18700000, guid: a30a50650a9d6fc479a103127fe370ca, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicTextures:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTextures:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedAOMap:
@@ -237,14 +258,110 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedNormalTexture:
-        m_Texture: {fileID: 2800000, guid: f2233ed0bb97c0b46a4e8641e84c609b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 311e5166fd8217a44b246c5f3161dcff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedTextures:
         m_Texture: {fileID: 18700000, guid: ef2bba55cf4975546ae4bb46056b7e01, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DArrayAsset_af2fb6714041489eb3b7034f3899d2a8_Out_0_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_045ea0b6ae2d4dde90780c5cbeb76bbc_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_0500aa482c36420eb3ecc4080ee903e4_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_08b57913cb084226ba2b19ae45ebfde6_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_1055599449164b49909c24e6aa9f8f88_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_10d21821cd0b446bb3b5940b6d10d020_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_1e072d12b37b4c99954d675216f9958e_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_227fdd92c4a84729a3c3273ae353e8f7_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_23dbef7638314557a57015a6ba5c24db_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_25375c70329c47e5945b213fc040379e_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_2e4f4007f2cb4b0590ed8153c24bae63_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_31ecabaa35e644b98541563d69eb50e9_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_368073f9d28c42089789f100cb33ee4d_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_38befe3958ff484c85041a4d7bf331df_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_3943bf689f1341cd9651a75a198909af_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_3bf5d316a9734f19a20337557d469838_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_4750fa199e9a4f24b657191ba29b23d0_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_58f719cb38b846f79d52aab52e9b349c_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_5d49672c96bc4809af58ba572afc2a2f_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_63355231ba0f48e595e24eb26ca8720f_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_653bd8bd18174835b4198bb664fec8f9_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_655d2d1cfbd646f3ac4651244aab0d86_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_80f6c3ecf1cc45d58c558ca03b688e78_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_81f34b9a177f4932893a5d8031d28c12_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_82ec636b53d7447bb853323d347036eb_Out_0_Texture2D:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -252,15 +369,247 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_acfe8c6fa5ad4c5583c5992f9fea69ac_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_aeff9fefbd0c4634957630dc7e8ab7bc_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_b46783aeefdc4d2383e430cdee722e70_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_b840f07ece124ab2bad6c4302154ed9c_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_cc66ba64d45d449ba03e8367c1230639_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_db053ec627024ce3adf3d4cc78d53cf8_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_dc586e5d5339459682cf919d60bd7b0c_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_de27efe4de1b42d6a0b35cada7703328_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_e76141d77a0e4e4fb6dfd3c905566ca3_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_ea2f4ae324e648c5a5d75cab685740cf_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_ed3fc4b06cb648e6aee3fcc63dc27c87_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_efc899aa7aa543c886f747b3c041ba3b_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_f65bcba1a8f548a4a5e68d173636c554_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_fff585bd46044eb6afdf9a170106bf1b_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ToonRamp:
         m_Texture: {fileID: 2800000, guid: 92b95f55a47040541906f078c0f4b2db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TriplanarNodeCustomFunction_a7503a175933486085903ec4701d19bf_Texture_3_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TriplanarNodeCustomFunction_d971e689e49d4d8ca2f250ab917d630d_Texture_3_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_AOTextures_3218440591_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_AlbedoTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_FloorNormalTexture_393282189_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_FloorTextures_2243405914_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_FloorTextures_77033186_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_HeightTextures_4152766234_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_MainNormalTexture_4191386854_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_MainTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_MetallicTextures_1768849047_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_NormalTextures_3499685010_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_5204108cd2984ce6b722e793103c0791_Textures_2473975960_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_AOTextures_3218440591_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_AlbedoTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_FloorAOMap_4165830760_Texture2D:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_FloorNormalTexture_393282189_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_FloorTextures_2243405914_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_HeightTextures_4152766234_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_MainAOMap_3251247164_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_MainNormalTexture_4191386854_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_MainTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_MetallicTextures_1768849047_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_NormalTextures_3499685010_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_72c6da3a5e914e64a0f66cec75ed0f2b_Textures_2473975960_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_AOTextures_3218440591_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_AlbedoTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_FloorNormalTexture_393282189_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_FloorTextures_2243405914_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_FloorTextures_77033186_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_HeightTextures_4152766234_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_MainNormalTexture_4191386854_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_MainTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_MetallicTextures_1768849047_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_NormalTextures_3499685010_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_de8441e4969a4aad837950672442be37_Textures_2473975960_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_AOTextures_3218440591_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_AlbedoTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_FloorNormalTexture_393282189_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_FloorTextures_2243405914_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_FloorTextures_77033186_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_HeightTextures_4152766234_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_MainNormalTexture_4191386854_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_MainTextures_877925795_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_MetallicTextures_1768849047_Texture2DArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_fb4f5729282a49b493089927ba2e032d_NormalTextures_3499685010_Texture2DArray:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -282,7 +631,7 @@ Material:
     - MAIN_LIGHT_CALCULATE_SHADOWS: 1
     - _AcuteDepthStartDot: 0.384
     - _AcuteDepthThresholdMult: 1.49
-    - _BLEND_TYPE: 0
+    - _BLEND_TYPE: 1
     - _DepthSensitivity: 0.3
     - _DepthStrength: 150
     - _DepthThreshold: 0.25
@@ -291,14 +640,14 @@ Material:
     - _FarDepthThresholdMult: 1
     - _FarNormalStartDepth: 0
     - _FarNormalThresholdMult: 1
-    - _FloorSmoothness: 0.15
+    - _FloorSmoothness: 0.559
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
-    - _MainSmoothness: 0.04
-    - _NoiseDistortionIntensity: 1
+    - _MainSmoothness: 0.035
+    - _NoiseDistortionIntensity: 0.87
     - _NoiseIntensity: 0.345
-    - _NoiseIntensityScale: 1
+    - _NoiseIntensityScale: 23
     - _NoisePower: 1.7
-    - _NoiseScale: 1
+    - _NoiseScale: 70
     - _NoiseStep: 0.3
     - _NormalsSensitivity: 1
     - _NormalsStrength: 100
@@ -310,11 +659,11 @@ Material:
     - _RimLightColorInfluence: 0.5
     - _RimLightEdgePower: 1
     - _RimLightShadowPower: 0.65
-    - _RimLightStrength: 0
+    - _RimLightStrength: 1.5
     - _SHADOWS_SOFT: 1
-    - _Scale: 0.025
+    - _Scale: 0.03
     - _Smoothness: 0.1
-    - _Thickness: 3
+    - _Thickness: 3.49
     - _USETEXTURES: 0
     - _USE_FLOOR: 0
     - _USE_TEXTURES: 0
@@ -324,12 +673,12 @@ Material:
     - _UseHeight: 0
     - _UseNoise: 1
     - _UseNormal: 1
-    - _UseRimLight: 1
+    - _UseRimLight: 0
     - _UseTextures: 1
     m_Colors:
     - _Color: {r: 1, g: 0.88235295, b: 0, a: 0}
     - _FloorColor: {r: 1, g: 1, b: 1, a: 0}
-    - _MainColor: {r: 0.89433956, g: 0.7624273, b: 0.65303653, a: 0}
+    - _MainColor: {r: 0.690566, g: 0.6495977, b: 0.56157345, a: 0}
     - _OutlinesColor: {r: 0, g: 0, b: 0, a: 0}
     - _RimLightColor: {r: 0.6301887, g: 0.070541576, b: 0, a: 0}
   m_BuildTextureStacks: []
