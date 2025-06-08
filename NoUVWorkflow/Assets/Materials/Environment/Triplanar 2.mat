@@ -679,7 +679,7 @@ Material:
     - _Color: {r: 1, g: 0.88235295, b: 0, a: 0}
     - _FloorColor: {r: 1, g: 1, b: 1, a: 0}
     - _MainColor: {r: 0.78867924, g: 0.7359833, b: 0.61755073, a: 0}
-    - _OutlinesColor: {r: 0.08902835, g: 0.08576331, b: 0.09408931, a: 0}
+    - _OutlinesColor: {r: 0.08902272, g: 0.08575747, b: 0.09408238, a: 0}
     - _RimLightColor: {r: 0.1764706, g: 0.19102344, b: 0.23137255, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4086900988441999052

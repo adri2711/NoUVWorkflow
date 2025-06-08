@@ -60,14 +60,11 @@ float FarDepthStart, float FarDepthThresholdMult, float FarNormalStartDepth, flo
     float depthFiniteDifference0 = depthSamples[1] - depthSamples[0];
     float depthFiniteDifference1 = depthSamples[3] - depthSamples[2];
     float edgeDepth = sqrt(pow(depthFiniteDifference0, 2) + pow(depthFiniteDifference1, 2)) * 100;
-    //float depthThreshold = (1/DepthSensitivity) * depthSamples[0];
-    //edgeDepth = edgeDepth > depthThreshold ? 1 : 0;
 
     // Normals
     float3 normalFiniteDifference0 = normalSamples[1] - normalSamples[0];
     float3 normalFiniteDifference1 = normalSamples[3] - normalSamples[2];
     float edgeNormal = sqrt(dot(normalFiniteDifference0, normalFiniteDifference0) + dot(normalFiniteDifference1, normalFiniteDifference1));
-    //edgeNormal = edgeNormal > (1/NormalsSensitivity) ? 1 : 0;
 
     float3 tn = DecodeNormal(SAMPLE_TEXTURE2D(_CameraDepthNormalsTexture, sampler_CameraDepthNormalsTexture, UV));
     float3 tvd = ViewDirectionFromScreenUV(UV);

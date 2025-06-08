@@ -6,7 +6,7 @@ using UnityEngine;
 public class GroundedMovementHandler : MovementHandler
 {
     public static float runSpeed = 168f;
-    public static float jumpStrength = 14f;
+    public static float jumpStrength = 18f;
     public static float horizontalDrag = 15f;
     public static float bobbingStrength = 0.3f;
 

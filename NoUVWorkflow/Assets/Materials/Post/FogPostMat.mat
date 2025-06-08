@@ -59,7 +59,7 @@ Material:
     - _Speed: 2
     m_Colors:
     - _EdgeColor: {r: 1, g: 0.3182251, b: 0, a: 0}
-    - _FarColor: {r: 0.31136346, g: 0.3667587, b: 0.4264151, a: 0}
+    - _FarColor: {r: 0.30980393, g: 0.34418067, b: 0.42745098, a: 0}
     - _NearColor: {r: 0.2883232, g: 0.30869138, b: 0.335849, a: 0}
     - _NoiseColor: {r: 1, g: 0, b: 0.005447865, a: 0}
   m_BuildTextureStacks: []
